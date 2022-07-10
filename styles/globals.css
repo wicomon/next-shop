@@ -21,11 +21,13 @@
 
 
 .circular-btn {
-  border-radius: 30px;
+  border-radius: 30px!important;
+  background-color: #5178e4;
+  width: 100%;
 }
 
 .circular-btn:hover {
-  background-color: #274494;
+  background-color: #274494!important;
 }
 
 
