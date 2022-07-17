@@ -21,14 +21,14 @@ export const ProductCard: FC<Props> = ({ product }) => {
 
   const productImage = useMemo(() => {
     return isHovered
-      ? `products/${product.images[1]}`
-      : `products/${product.images[0]}`;
+      ? `/products/${product.images[1]}`
+      : `/products/${product.images[0]}`;
   }, [isHovered, product.images]);
 
   return (
     <Grid item xs={12} sm={6} md={4}>
       <Card>
-        <NextLink href={`/product/slug`} passHref prefetch={false} >
+        <NextLink href={`/product/${product.slug}`} passHref prefetch={false} >
           <Link>
             <CardActionArea>
               <CardMedia
